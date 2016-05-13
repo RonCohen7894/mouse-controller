@@ -1,0 +1,9 @@
+C:\Users\ron\Documents\Visual Studio 2015\Projects\mouse controler\mouse controler\bin\Debug\mouse controler.exe.config
+C:\Users\ron\Documents\Visual Studio 2015\Projects\mouse controler\mouse controler\bin\Debug\mouse controler.exe
+C:\Users\ron\Documents\Visual Studio 2015\Projects\mouse controler\mouse controler\bin\Debug\mouse controler.pdb
+C:\Users\ron\Documents\Visual Studio 2015\Projects\mouse controler\mouse controler\obj\Debug\mouse controler.csprojResolveAssemblyReference.cache
+C:\Users\ron\Documents\Visual Studio 2015\Projects\mouse controler\mouse controler\obj\Debug\mouse_controler.Form1.resources
+C:\Users\ron\Documents\Visual Studio 2015\Projects\mouse controler\mouse controler\obj\Debug\mouse_controler.Properties.Resources.resources
+C:\Users\ron\Documents\Visual Studio 2015\Projects\mouse controler\mouse controler\obj\Debug\mouse controler.csproj.GenerateResource.Cache
+C:\Users\ron\Documents\Visual Studio 2015\Projects\mouse controler\mouse controler\obj\Debug\mouse controler.exe
+C:\Users\ron\Documents\Visual Studio 2015\Projects\mouse controler\mouse controler\obj\Debug\mouse controler.pdb
