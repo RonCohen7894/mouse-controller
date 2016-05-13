@@ -91,6 +91,7 @@
             this.SP_X.Name = "SP_X";
             this.SP_X.Size = new System.Drawing.Size(67, 20);
             this.SP_X.TabIndex = 2;
+            this.SP_X.Text = "1127";
             // 
             // SP_Y
             // 
@@ -98,6 +99,7 @@
             this.SP_Y.Name = "SP_Y";
             this.SP_Y.Size = new System.Drawing.Size(71, 20);
             this.SP_Y.TabIndex = 2;
+            this.SP_Y.Text = "728";
             // 
             // label2
             // 
@@ -150,6 +152,7 @@
             this.GoTo_1_x.Name = "GoTo_1_x";
             this.GoTo_1_x.Size = new System.Drawing.Size(67, 20);
             this.GoTo_1_x.TabIndex = 2;
+            this.GoTo_1_x.Text = "1097";
             // 
             // GoTo_1_y
             // 
@@ -157,6 +160,7 @@
             this.GoTo_1_y.Name = "GoTo_1_y";
             this.GoTo_1_y.Size = new System.Drawing.Size(71, 20);
             this.GoTo_1_y.TabIndex = 2;
+            this.GoTo_1_y.Text = "823";
             // 
             // label7
             // 
@@ -182,6 +186,7 @@
             this.GoTo_2_x.Name = "GoTo_2_x";
             this.GoTo_2_x.Size = new System.Drawing.Size(67, 20);
             this.GoTo_2_x.TabIndex = 2;
+            this.GoTo_2_x.Text = "790";
             // 
             // GoTo_2_y
             // 
@@ -189,6 +194,7 @@
             this.GoTo_2_y.Name = "GoTo_2_y";
             this.GoTo_2_y.Size = new System.Drawing.Size(71, 20);
             this.GoTo_2_y.TabIndex = 2;
+            this.GoTo_2_y.Text = "500";
             // 
             // label9
             // 
@@ -223,6 +229,7 @@
             this.GoTo_3_x.Name = "GoTo_3_x";
             this.GoTo_3_x.Size = new System.Drawing.Size(67, 20);
             this.GoTo_3_x.TabIndex = 2;
+            this.GoTo_3_x.Text = "1100";
             // 
             // GoTo_3_y
             // 
@@ -230,6 +237,7 @@
             this.GoTo_3_y.Name = "GoTo_3_y";
             this.GoTo_3_y.Size = new System.Drawing.Size(71, 20);
             this.GoTo_3_y.TabIndex = 2;
+            this.GoTo_3_y.Text = "200";
             // 
             // label12
             // 
@@ -264,6 +272,7 @@
             this.Text_2.Name = "Text_2";
             this.Text_2.Size = new System.Drawing.Size(67, 20);
             this.Text_2.TabIndex = 2;
+            this.Text_2.Text = "144";
             // 
             // GoTo_4_y
             // 
@@ -330,6 +339,7 @@
             this.Repeat.Name = "Repeat";
             this.Repeat.Size = new System.Drawing.Size(67, 20);
             this.Repeat.TabIndex = 2;
+            this.Repeat.Text = "8";
             // 
             // label19
             // 

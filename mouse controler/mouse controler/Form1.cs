@@ -104,13 +104,13 @@ namespace mouse_controler
             GOTO_1_x = int.Parse(GoTo_1_x.Text);
             GOTO_2_x = int.Parse(GoTo_2_x.Text);
             GOTO_3_x = int.Parse(GoTo_3_x.Text);
-            GOTO_4_x = int.Parse(GoTo_4_x.Text);
+            //GOTO_4_x = int.Parse(GoTo_4_x.Text);
 
             startingPoint_y = int.Parse(SP_Y.Text);
             GOTO_1_y = int.Parse(GoTo_1_y.Text);
             GOTO_2_y = int.Parse(GoTo_2_y.Text);
             GOTO_3_y = int.Parse(GoTo_3_y.Text);
-            GOTO_4_y = int.Parse(GoTo_4_y.Text);
+            //GOTO_4_y = int.Parse(GoTo_4_y.Text);
 
             repeat = int.Parse(Repeat.Text);
             text_1 = Text_1.Text;
@@ -123,26 +123,26 @@ namespace mouse_controler
 
             for (int f = 0; f <= repeat; f++)
             {
-                Move(startingPoint_x, startingPoint_y);
+                Cursor.Position = new Point(startingPoint_x, startingPoint_y);
+                await Task.Delay(2000);
+                RightClick();
+                await Task.Delay(2000);
+
+                Cursor.Position = new Point(GOTO_1_x, GOTO_1_y);
+                await Task.Delay(2000);
                 LeftClick();
                 await Task.Delay(2000);
 
-                Move(GOTO_1_x, GOTO_1_y);
-                LeftClick();
-                await Task.Delay(2000);
-
-                Move(GOTO_2_x, GOTO_2_y);
-                LeftClick();
-                await Task.Delay(2000);
-
-                Move(GOTO_3_x, GOTO_3_y);
-                LeftClick();
-                await Task.Delay(2000);
-
-                SendKeys.SendWait(string.Format("{0} {1}", text_1, i));
+                SendKeys.SendWait(string.Format("{0} {1}", text_1, (i + f)));
                 await Task.Delay(1000);
 
-                Move(GOTO_4_x, GOTO_4_y);
+                Cursor.Position = new Point(GOTO_2_x, GOTO_2_y);
+                await Task.Delay(2000);
+                LeftClick();
+                await Task.Delay(2000);
+
+                Cursor.Position = new Point(GOTO_3_x, GOTO_3_y);
+                await Task.Delay(2000);
                 LeftClick();
                 await Task.Delay(5000);
             }                      
