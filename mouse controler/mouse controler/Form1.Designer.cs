@@ -63,6 +63,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.Text_1 = new System.Windows.Forms.TextBox();
             this.GetC = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // start
@@ -91,7 +92,7 @@
             this.SP_X.Name = "SP_X";
             this.SP_X.Size = new System.Drawing.Size(67, 20);
             this.SP_X.TabIndex = 2;
-            this.SP_X.Text = "1127";
+            this.SP_X.Text = "1270";
             // 
             // SP_Y
             // 
@@ -99,7 +100,7 @@
             this.SP_Y.Name = "SP_Y";
             this.SP_Y.Size = new System.Drawing.Size(71, 20);
             this.SP_Y.TabIndex = 2;
-            this.SP_Y.Text = "728";
+            this.SP_Y.Text = "700";
             // 
             // label2
             // 
@@ -152,7 +153,7 @@
             this.GoTo_1_x.Name = "GoTo_1_x";
             this.GoTo_1_x.Size = new System.Drawing.Size(67, 20);
             this.GoTo_1_x.TabIndex = 2;
-            this.GoTo_1_x.Text = "1097";
+            this.GoTo_1_x.Text = "1083";
             // 
             // GoTo_1_y
             // 
@@ -160,7 +161,7 @@
             this.GoTo_1_y.Name = "GoTo_1_y";
             this.GoTo_1_y.Size = new System.Drawing.Size(71, 20);
             this.GoTo_1_y.TabIndex = 2;
-            this.GoTo_1_y.Text = "823";
+            this.GoTo_1_y.Text = "796";
             // 
             // label7
             // 
@@ -237,7 +238,7 @@
             this.GoTo_3_y.Name = "GoTo_3_y";
             this.GoTo_3_y.Size = new System.Drawing.Size(71, 20);
             this.GoTo_3_y.TabIndex = 2;
-            this.GoTo_3_y.Text = "200";
+            this.GoTo_3_y.Text = "355";
             // 
             // label12
             // 
@@ -272,7 +273,6 @@
             this.Text_2.Name = "Text_2";
             this.Text_2.Size = new System.Drawing.Size(67, 20);
             this.Text_2.TabIndex = 2;
-            this.Text_2.Text = "144";
             // 
             // GoTo_4_y
             // 
@@ -339,7 +339,6 @@
             this.Repeat.Name = "Repeat";
             this.Repeat.Size = new System.Drawing.Size(67, 20);
             this.Repeat.TabIndex = 2;
-            this.Repeat.Text = "8";
             // 
             // label19
             // 
@@ -368,11 +367,21 @@
             this.GetC.UseVisualStyleBackColor = true;
             this.GetC.Click += new System.EventHandler(this.GetC_Click);
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(0, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(41, 13);
+            this.label20.TabIndex = 5;
+            this.label20.Text = "label20";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 389);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label19);
@@ -453,6 +462,7 @@
         private System.Windows.Forms.TextBox SP_X;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button GetC;
+        private System.Windows.Forms.Label label20;
     }
 }
 

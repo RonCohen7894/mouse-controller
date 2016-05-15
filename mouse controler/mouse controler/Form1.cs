@@ -24,7 +24,7 @@ namespace mouse_controler
         public int GOTO_1_x { get; set; }
         public int GOTO_2_x { get; set; }
         public int GOTO_3_x { get; set; }
-        public int GOTO_4_x { get; set; }
+       // public int GOTO_4_x { get; set; }
         public int repeat { get; set; }
         public string text_1 { get; set; }
         public int text_2 { get; set; }
@@ -33,7 +33,7 @@ namespace mouse_controler
         public int GOTO_1_y { get; set; }
         public int GOTO_2_y { get; set; }
         public int GOTO_3_y { get; set; }
-        public int GOTO_4_y { get; set; }
+    //    public int GOTO_4_y { get; set; }
 
         [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
@@ -120,31 +120,45 @@ namespace mouse_controler
 
             #endregion;
             await Task.Delay(2000);
+            int run = 0;
+            int g = 0;
 
             for (int f = 0; f <= repeat; f++)
             {
+                //Go to start and right click
                 Cursor.Position = new Point(startingPoint_x, startingPoint_y);
                 await Task.Delay(2000);
                 RightClick();
-                await Task.Delay(2000);
-
-                Cursor.Position = new Point(GOTO_1_x, GOTO_1_y);
-                await Task.Delay(2000);
-                LeftClick();
-                await Task.Delay(2000);
-
-                SendKeys.SendWait(string.Format("{0} {1}", text_1, (i + f)));
                 await Task.Delay(1000);
 
+                //Go to save as and click
+                Cursor.Position = new Point(GOTO_1_x, GOTO_1_y);
+                await Task.Delay(1000);
+                LeftClick();
+                await Task.Delay(5000);
+
+                //Change name
+                SendKeys.SendWait(string.Format("{0} {1}", text_1, (i + f)));
+                await Task.Delay(2000);
+
+                //Go to save and click
                 Cursor.Position = new Point(GOTO_2_x, GOTO_2_y);
                 await Task.Delay(2000);
                 LeftClick();
-                await Task.Delay(2000);
+                await Task.Delay(1000);
 
+                //Go to next page and click
                 Cursor.Position = new Point(GOTO_3_x, GOTO_3_y);
-                await Task.Delay(2000);
+                await Task.Delay(1000);
                 LeftClick();
                 await Task.Delay(5000);
+
+                //after 10 downloads in a raw rest for 5 minutes
+                if (g > 10){ await Task.Delay(300000); g = 0; }
+
+                g++;
+                run++;
+                label20.Text = run.ToString();
             }                      
         }
 
